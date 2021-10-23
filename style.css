@@ -80,7 +80,7 @@ li a {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-  /* Animação dos botoes */
+  /* Animação dos Icones */
  @keyframes bounce {
   0%,
   20%,
@@ -104,5 +104,3 @@ li a {
 li a:hover {
   animation: bounce 0.55s;
 } 
-
-/* aanimaçao icons */
