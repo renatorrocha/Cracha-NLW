@@ -75,12 +75,13 @@ ul {
 
   justify-content: center;
 }
-li a{
+li a {
   transition: 0.3s;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-/* @keyframes bounce {
+  /* Animação dos botoes */
+ @keyframes bounce {
   0%,
   20%,
   60%,
@@ -102,4 +103,6 @@ li a{
 
 li a:hover {
   animation: bounce 0.55s;
-} */
+} 
+
+/* aanimaçao icons */
