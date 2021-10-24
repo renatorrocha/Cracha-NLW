@@ -132,6 +132,7 @@ ul li a:hover {
 }
 
 .tema button{
+  margin-top: 12px;
   border: none;
   align-self: flex-end;
   font-size: 20px;
