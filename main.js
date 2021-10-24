@@ -30,3 +30,7 @@ function getGitHubProfileinfos() {
     })
 }
 getGitHubProfileinfos()
+
+function switchTheme(){
+  document.body.classList.toggle("white")
+}
