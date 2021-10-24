@@ -109,6 +109,35 @@ ul li a:hover {
     margin-top: 18px;
     margin-left: 137px;
   }
+  .container {
+    margin-top: -8rem;
+  }
+  .keychain {
+    background: linear-gradient(161.24deg,#FFC323 -15.25%,#FF3D6E 111.89%);
+    width: 90px;
+    height: 740px;
+    position: absolute;
+    margin-top: -45rem;
+    margin-left: 8.9rem;
+    z-index: 2;
+  }
+  .hole {
+    position: absolute;
+    background: #121214;
+    width: 100px;
+    height: 8px;
+    margin-top: 18px;
+    margin-left: 137px;
+  }
+}
+
+.tema button{
+  border: none;
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 6px 14px;
+  background: linear-gradient(161.24deg,#FFC323 -15.25%,#FF3D6E 111.89%);
+  border-radius: 100px;
 }
 
 .tema button{
