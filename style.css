@@ -5,7 +5,6 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
-
   height: 100%;
   font-family: 'roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,12 +14,7 @@ body {
   display: grid;
   place-items: center;
 }
-main {
-  background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
-}
+
 .container {
   max-width: 250px;
   margin-left: auto;
@@ -46,7 +40,6 @@ main {
 }
 h1 {
   font-size: 1.5rem;
-
   margin-top: 1.5rem;
 }
 a {
@@ -75,34 +68,67 @@ ul {
 
   justify-content: center;
 }
-li a {
+ul li a {
   transition: 0.3s;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-  /* Animação dos botoes */
- @keyframes bounce {
-  0%,
-  20%,
-  60%,
-  100%{
-    -webkit-transform: translateY(0);
-    transform: rotateX(0)
-  }
+ul li a:hover {
+  transform: translateY(-8px);
+}
 
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: rotateX(-20px)   
+@media (min-width: 720px) {
+  body {
+    background: #121214;
   }
-
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: rotateX(-10px)      
+  main {
+    border-radius: 50px;
+    width: 358px;
+    height: 541px;
+    min-height: 0;
+    margin: auto;
+    color: var(--grey-white);
+    background: url(images/background.svg) no-repeat center/cover;
+  }
+  .container {
+    margin-top: -8rem;
+  }
+  .keychain {
+    background: linear-gradient(161.24deg,#FFC323 -15.25%,#FF3D6E 111.89%);
+    width: 90px;
+    height: 740px;
+    position: absolute;
+    margin-top: -45rem;
+    margin-left: 8.9rem;
+    z-index: 2;
+  }
+  .hole {
+    position: absolute;
+    background: #121214;
+    width: 100px;
+    height: 8px;
+    margin-top: 18px;
+    margin-left: 137px;
   }
 }
 
-li a:hover {
-  animation: bounce 0.55s;
-} 
+.tema button{
+  border: none;
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 6px 14px;
+  background: linear-gradient(161.24deg,#FFC323 -15.25%,#FF3D6E 111.89%);
+  border-radius: 100px;
+}
 
-/* aanimaçao icons */
+
+.white {
+  background: linear-gradient(161.24deg, #f5746b 27.26%, #e0e0e0 96.03%);
+}
+.white .tema button {
+  border: none;
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 6px 14px;
+  background: linear-gradient(161.24deg,#f5746b 27.26%,#e0e0e0 96.03%);
+  border-radius: 100px;
+}
